@@ -1,4 +1,5 @@
 # Dynamic Excel Generator.
+## Rails 7 Ruby 3.2.0 caxlsx gem and MySQL
 
 Basically You can generate excel file on any table that is existing in your database (or that is listed on the schema)
 
@@ -11,7 +12,14 @@ Basically You can generate excel file on any table that is existing in your data
 - Can only remove columns, If you misclick just generate it again.
 
 # Things to Improve/Add
-- Design
+- Design (Well I don't think so. It's just a showcase that the code works you can design it whatever you want.)
 - Ability to Join tables
 - Ability to add column
 - Ability to design the spreadsheet
+
+
+# How it works (I am really sorry for everything)
+
+https://github.com/user-attachments/assets/925f8374-2210-4baf-abaf-ffff71ff0081
+
+## Rails 7 Ruby 3.2.0 caxlsx gem and MySQL
