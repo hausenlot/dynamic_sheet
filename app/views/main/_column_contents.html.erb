@@ -1,0 +1,19 @@
+<turbo-frame id="column_contents">
+  <%= form_with url: preview_main_index_path, method: :get, data: { turbo_frame: 'table_contents' } do %>
+    <%= hidden_field_tag :model, @model_name %>
+    <%= hidden_field_tag :removed_columns, (params[:removed_columns] || []).join(",") %>
+
+    <table>
+      <thead>
+        <% @col_name.each do |col| %>
+          <th><%= col %>
+              <% if @col_name.first != col%>
+                <%= link_to "Remove", remove_column_main_index_path(column: col, model: @model_name, removed_columns: (params[:removed_columns] || []).join(",")) %>
+              <% end %>
+          </th>
+        <% end %>
+      </thead>
+    </table>
+    <%= submit_tag "Preview" %>
+  <% end %>
+</turbo-frame>

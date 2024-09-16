@@ -1,0 +1,10 @@
+<%= form_with url: show_columns_main_index_path, method: :get, data: { turbo_frame: 'column_contents' } do %>
+  <%= select_tag :model, options_for_select(@models) %>
+  <%= submit_tag "Show Contents" %>
+<% end %>
+
+<turbo-frame id="column_contents">
+</turbo-frame>
+
+<turbo-frame id="table_contents">
+</turbo-frame>
